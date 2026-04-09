@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sudoku Master</h1>
+        <div class="timer" id="timer">Tiempo: 00:00</div>
+        <div id="sudoku-board"></div>
+        <div class="controls">
+            <button id="new-game">Nuevo Juego</button>
+            <button id="check-solution">Verificar</button>
+            <button id="solve">Resolver</button>
+        </div>
+        <div class="numpad">
+            <button class="num-btn" data-num="1">1</button>
+            <button class="num-btn" data-num="2">2</button>
+            <button class="num-btn" data-num="3">3</button>
+            <button class="num-btn" data-num="4">4</button>
+            <button class="num-btn" data-num="5">5</button>
+            <button class="num-btn" data-num="6">6</button>
+            <button class="num-btn" data-num="7">7</button>
+            <button class="num-btn" data-num="8">8</button>
+            <button class="num-btn" data-num="9">9</button>
+            <button class="num-btn" data-num="0">X</button>
+        </div>
+        <div class="message" id="message"></div>
+        <div class="rules">
+            <h3>Reglas del Juego</h3>
+            <ul>
+                <li>El objetivo es rellenar una cuadricula de 9x9 con numeros del 1 al 9.</li>
+                <li>No se puede repetir ningun numero en la misma fila.</li>
+                <li>No se puede repetir ningun numero en la misma columna.</li>
+                <li>No se puede repetir ningun numero en la misma subcuadricula de 3x3.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
